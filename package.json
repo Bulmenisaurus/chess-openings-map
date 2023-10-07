@@ -1,0 +1,23 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write .",
+    "build": "esbuild src/script.ts --bundle --outdir=dist",
+    "build:watch": "esbuild src/script.ts --bundle --outdir=dist --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/leaflet": "^1.9.6",
+    "chess.js": "^1.0.0-beta.6",
+    "chessground": "^9.0.4",
+    "esbuild": "^0.19.4",
+    "leaflet": "^1.9.4",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  }
+}

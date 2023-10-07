@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Location</title>
+        <style>
+            tr > th:first-child {
+                text-align: left;
+                font-weight: normal;
+            }
+
+            button {
+                width: 24px;
+                height: 24px;
+                border: none;
+                font-family: 'Courier New', Courier, monospace;
+            }
+
+            table {
+                border: none;
+                border-collapse: collapse;
+            }
+
+            .confirm {
+                background-color: #5ef880;
+            }
+
+            .reject {
+                background-color: #f75e5e;
+            }
+
+            tr.removed {
+                opacity: 0.5;
+                background-color: #f75e5eaa;
+            }
+
+            tr.added {
+                opacity: 0.5;
+                background-color: #5ef880aa;
+            }
+
+            #popup {
+                position: fixed;
+                background-color: white;
+                box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.75);
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                padding: 10px;
+            }
+
+            #popup.hidden {
+                display: none;
+            }
+        </style>
+        <script>
+            window.addEventListener('DOMContentLoaded', async () => {
+                const res = await fetch('./openings.tsv');
+                const OPENINGS = await res.text();
+
+                /**
+                 * @param opening {string}
+                 */
+                const parseOpening = (opening) => {
+                    const [eco, name, pgn] = opening.split('\t');
+
+                    return { eco, name, pgn };
+                };
+
+                /**
+                 * @param name {string}
+                 */
+                const cleanName = (name) => {
+                    return name.replace(/[:,]/g, '').replace(/'s/g, '').replace(/-/g, ' ');
+                };
+
+                /**
+                 * @type {string[]}
+                 */
+                let allWords = [];
+                for (const opening of OPENINGS.split('\n')) {
+                    allWords = allWords.concat(cleanName(parseOpening(opening).name).split(' '));
+                }
+
+                const wordsSet = new Set(allWords);
+
+                /**
+                 * @type {string}
+                 */
+                let currentSelectedWord = undefined;
+
+                /**
+                 * @type {{[key: string]: (null | {location: string, latitude: number, longitude: number})}}
+                 */
+                const wordsData = JSON.parse(localStorage.getItem('words')) || {};
+
+                window.addEventListener('beforeunload', () => {
+                    localStorage.setItem('words', JSON.stringify(wordsData));
+                });
+                window.addEventListener('keydown', (ev) => {
+                    if (ev.key === 's' && ev.ctrlKey === true) {
+                        localStorage.setItem('words', JSON.stringify(wordsData));
+
+                        ev.preventDefault();
+                        return false;
+                    }
+                });
+                window.wordsData = wordsData;
+
+                const popup = document.getElementById('popup');
+                const popupConfirm = document.querySelector('#popup > .confirm');
+                const popupReject = document.querySelector('#popup > .reject');
+                const popupTitle = document.querySelector('#popup > h1');
+                const popupDescription = document.querySelector('#popup > textarea');
+                const coordinateInput = document.querySelector('#popup > #coordinates');
+
+                popupConfirm.onclick = () => {
+                    const [latitude, longitude] = coordinateInput.value
+                        .split(',')
+                        .map((i) => parseFloat(i));
+                    const description = popupDescription.value;
+                    wordsData[currentSelectedWord] = { latitude, longitude, location: description };
+                    popup.classList.add('hidden');
+
+                    const listItem = document.querySelector(
+                        `#words-container > .${currentSelectedWord}`
+                    );
+                    listItem.classList.add('added');
+                };
+
+                popupReject.onclick = () => {
+                    popup.classList.add('hidden');
+                };
+
+                const wordsList = document.getElementById('words-container');
+                for (const word of wordsSet) {
+                    const listElement = document.createElement('tr');
+                    listElement.classList.add(word);
+
+                    const th1 = document.createElement('th');
+                    const openingName = document.createElement('span');
+                    openingName.innerText = word;
+                    openingName.classList.add('word');
+                    th1.append(openingName);
+
+                    const th2 = document.createElement('th');
+                    const confirmButton = document.createElement('button');
+                    confirmButton.innerText = '✓';
+                    confirmButton.classList.add('confirm');
+                    th2.append(confirmButton);
+
+                    confirmButton.onclick = () => {
+                        listElement.classList.remove('removed');
+                        popup.classList.remove('hidden');
+                        currentSelectedWord = word;
+
+                        // update popup information
+                        popupTitle.innerText = word;
+
+                        if (wordsData[word]?.latitude) {
+                            coordinateInput.value = `${wordsData[word].latitude}, ${wordsData[word].longitude}`;
+                            popupDescription.value = wordsData[word].location;
+                        } else {
+                            coordinateInput.value = ``;
+                            popupDescription.value = word;
+                        }
+                    };
+
+                    const th3 = document.createElement('th');
+                    const rejectButton = document.createElement('button');
+                    rejectButton.innerText = '✗';
+                    rejectButton.classList.add('reject');
+                    th3.append(rejectButton);
+
+                    rejectButton.onclick = () => {
+                        listElement.classList.remove('added');
+                        listElement.classList.add('removed');
+                        wordsData[word] = null;
+                    };
+
+                    listElement.append(th1, th2, th3);
+
+                    wordsList.appendChild(listElement);
+
+                    if (wordsData[word] === null) {
+                        listElement.classList.add('removed');
+                    }
+                    if (word in wordsData && wordsData[word] !== null) {
+                        listElement.classList.add('added');
+                    }
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <div id="popup" class="hidden">
+            <h1 id="word">Word</h1>
+            <textarea id="description" cols="50" rows="3" placeholder="Null Island"></textarea>
+            <input type="text" id="coordinates" placeholder="0.000, 0.000" />
+            <button class="confirm">✓</button>
+            <button class="reject">✗</button>
+        </div>
+        <table>
+            <tbody id="words-container"></tbody>
+        </table>
+    </body>
+</html>
