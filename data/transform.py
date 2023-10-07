@@ -44,4 +44,6 @@ for opening in openings:
         else:
             transformed[name_location["location"]]['openings'].append({'name': name, 'pgn': pgn})
 
-print(json.dumps(transformed))
+
+with open("./data/openings.json", "w") as f:
+    json.dump(transformed, f)
