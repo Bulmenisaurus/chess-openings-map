@@ -10,7 +10,7 @@
                 font-weight: normal;
             }
 
-            button {
+            table button {
                 width: 24px;
                 height: 24px;
                 border: none;
@@ -190,6 +190,21 @@
                         listElement.classList.add('added');
                     }
                 }
+
+                const copyButton = document.getElementById('copy');
+                copyButton.onclick = async () => {
+                    const nonNullPlaces = {};
+                    for (const key in wordsData) {
+                        if (wordsData[key] === null) {
+                            continue;
+                        } else {
+                            nonNullPlaces[key] = wordsData[key];
+                        }
+                    }
+
+                    await navigator.clipboard.writeText(JSON.stringify(nonNullPlaces));
+                    alert('Copied');
+                };
             });
         </script>
     </head>
@@ -204,5 +219,6 @@
         <table>
             <tbody id="words-container"></tbody>
         </table>
+        <button id="copy">Copy</button>
     </body>
 </html>

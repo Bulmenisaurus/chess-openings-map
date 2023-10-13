@@ -1,4 +1,14 @@
 {
+  "Gent": {
+    "latitude": 51.050018,
+    "longitude": 3.730335,
+    "openings": [
+      {
+        "name": "Amar Opening: Gent Gambit",
+        "pgn": "1. Nh3 d5 2. g3 e5 3. f4 Bxh3 4. Bxh3 exf4 5. O-O fxg3 6. hxg3"
+      }
+    ]
+  },
   "Paris": {
     "latitude": 48.856614,
     "longitude": 2.352222,
@@ -3157,6 +3167,35 @@
     "longitude": 10.451526,
     "openings": [{ "name": "Polish Opening: German Defense", "pgn": "1. b4 d5 2. Bb2 Qd6" }]
   },
+  "Saragossa": {
+    "latitude": 41.648823,
+    "longitude": -0.889085,
+    "openings": [{ "name": "Saragossa Opening", "pgn": "1. c3" }]
+  },
+  "Valencia": {
+    "latitude": 39.469908,
+    "longitude": -0.376288,
+    "openings": [
+      { "name": "Valencia Opening", "pgn": "1. d3 e5 2. Nd2" },
+      {
+        "name": "Scandinavian Defense: Valencian Variation",
+        "pgn": "1. e4 d5 2. exd5 Qxd5 3. Nc3 Qd8"
+      },
+      {
+        "name": "Scandinavian Defense: Valencian Variation, Ilundain Variation",
+        "pgn": "1. e4 d5 2. exd5 Qxd5 3. Nc3 Qd8 4. d4 Nf6 5. Nf3 c6"
+      },
+      {
+        "name": "Scandinavian Defense: Valencian Variation, Main Line",
+        "pgn": "1. e4 d5 2. exd5 Qxd5 3. Nc3 Qd8 4. d4 Nf6 5. Nf3 Bg4"
+      }
+    ]
+  },
+  "Battambang": {
+    "latitude": 13.09573,
+    "longitude": 103.202206,
+    "openings": [{ "name": "Van Geet Opening: Battambang Variation", "pgn": "1. a3 e5 2. Nc3" }]
+  },
   "Novosibirsk": {
     "latitude": 54.983269,
     "longitude": 82.896383,
@@ -3417,6 +3456,11 @@
         "pgn": "1. e4 c5 2. d4 cxd4 3. c3 d5"
       }
     ]
+  },
+  "T\u00fcbingen": {
+    "latitude": 48.521636,
+    "longitude": 9.057645,
+    "openings": [{ "name": "Van Geet Opening: T\u00fcbingen Gambit", "pgn": "1. Nc3 Nf6 2. g4" }]
   },
   "England": {
     "latitude": 52.355518,
@@ -4108,9 +4152,18 @@
     "longitude": 2.213749,
     "openings": [
       { "name": "King's Indian Attack: French Variation", "pgn": "1. Nf3 d5 2. g3 c5 3. Bg2 Nc6" },
+      {
+        "name": "Benoni Defense: Franco-Sicilian Hybrid",
+        "pgn": "1. d4 e6 2. c4 c5 3. d5 exd5 4. cxd5 d6 5. Nc3 g6 6. e4 Bg7 7. Nf3 Ne7"
+      },
       { "name": "Englund Gambit Declined: Reversed French", "pgn": "1. d4 e5 2. e3" },
       { "name": "Benoni Defense: French Benoni", "pgn": "1. e4 e6 2. d4 c5 3. d5" },
+      { "name": "Nimzowitsch Defense: Franco-Nimzowitsch Variation", "pgn": "1. e4 Nc6 2. Nf3 e6" },
       { "name": "Nimzowitsch Defense: French Connection", "pgn": "1. e4 Nc6 2. Nc3 e6" },
+      {
+        "name": "Sicilian Defense: Franco-Sicilian Variation",
+        "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 e6"
+      },
       { "name": "Sicilian Defense: French Variation", "pgn": "1. e4 c5 2. Nf3 e6" },
       {
         "name": "Sicilian Defense: French Variation, Normal",
@@ -4142,7 +4195,10 @@
         "pgn": "1. e4 e6 2. d4 d5 3. c4 dxe4"
       },
       { "name": "French Defense: Franco-Hiva Gambit", "pgn": "1. e4 e6 2. d4 f5" },
+      { "name": "French Defense: Franco-Hiva Gambit", "pgn": "1. e4 e6 2. d4 f5" },
       { "name": "French Defense: Franco-Hiva Gambit Accepted", "pgn": "1. e4 e6 2. d4 f5 3. exf5" },
+      { "name": "French Defense: Franco-Hiva Gambit Accepted", "pgn": "1. e4 e6 2. d4 f5 3. exf5" },
+      { "name": "French Defense: Franco-Sicilian Defense", "pgn": "1. e4 e6 2. d4 c5" },
       { "name": "French Defense: Franco-Sicilian Defense", "pgn": "1. e4 e6 2. d4 c5" },
       {
         "name": "French Defense: Hoffmann Gambit",
@@ -4158,7 +4214,15 @@
         "name": "French Defense: King's Indian Attack, Franco-Hiva Gambit",
         "pgn": "1. e4 e6 2. d3 f5"
       },
+      {
+        "name": "French Defense: King's Indian Attack, Franco-Hiva Gambit",
+        "pgn": "1. e4 e6 2. d3 f5"
+      },
       { "name": "French Defense: Knight Variation", "pgn": "1. e4 e6 2. Nf3" },
+      {
+        "name": "French Defense: Knight Variation, Franco-Hiva Gambit",
+        "pgn": "1. e4 e6 2. Nf3 f5"
+      },
       {
         "name": "French Defense: Knight Variation, Franco-Hiva Gambit",
         "pgn": "1. e4 e6 2. Nf3 f5"
@@ -4775,6 +4839,11 @@
       }
     ]
   },
+  "Montevideo": {
+    "latitude": -34.905502,
+    "longitude": -56.185115,
+    "openings": [{ "name": "Montevideo Defense", "pgn": "1. d4 Nc6 2. d5 Nb8" }]
+  },
   "Democratic Republic of the Congo": {
     "latitude": -4.038333,
     "longitude": 21.758664,
@@ -4818,6 +4887,21 @@
       {
         "name": "Indian Defense: Gibbins-Weidenhagen Gambit, Oshima Defense",
         "pgn": "1. d4 Nf6 2. g4 e5"
+      }
+    ]
+  },
+  "Marienbad": {
+    "latitude": 49.964599,
+    "longitude": 12.701198,
+    "openings": [
+      { "name": "Marienbad System", "pgn": "1. d4 Nf6 2. Nf3 b6 3. g3 Bb7 4. Bg2 c5" },
+      {
+        "name": "Marienbad System: Berg Variation",
+        "pgn": "1. d4 Nf6 2. Nf3 b6 3. g3 Bb7 4. Bg2 c5 5. c4 cxd4 6. Qxd4"
+      },
+      {
+        "name": "Sicilian Defense: Wing Gambit, Marienbad Variation",
+        "pgn": "1. e4 c5 2. b4 cxb4 3. a3 d5 4. exd5 Qxd5 5. Bb2"
       }
     ]
   },
@@ -4879,6 +4963,24 @@
       {
         "name": "Benko Gambit Declined: Hj\u00f8rring Countergambit",
         "pgn": "1. d4 Nf6 2. c4 c5 3. d5 b5 4. e4"
+      }
+    ]
+  },
+  "Hastings": {
+    "latitude": 50.854259,
+    "longitude": 0.573453,
+    "openings": [
+      {
+        "name": "Benoni Defense: Fianchetto Variation, Hastings Defense",
+        "pgn": "1. d4 Nf6 2. c4 e6 3. g3 c5 4. d5 exd5 5. cxd5 d6 6. Nc3 g6 7. Bg2 Bg7 8. Nf3 O-O 9. O-O Nbd7"
+      },
+      {
+        "name": "Benoni Defense: Fianchetto Variation, Hastings Defense, Main Line",
+        "pgn": "1. d4 Nf6 2. c4 e6 3. g3 c5 4. d5 exd5 5. cxd5 d6 6. Nc3 g6 7. Bg2 Bg7 8. Nf3 O-O 9. O-O a6 10. a4 Nbd7 11. Nd2 Re8"
+      },
+      {
+        "name": "Queen's Gambit Declined: Hastings Variation",
+        "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. Bg5 h6 6. Bxf6 Qxf6 7. Qb3"
       }
     ]
   },
@@ -5228,6 +5330,16 @@
       }
     ]
   },
+  "Aachen": {
+    "latitude": 50.775346,
+    "longitude": 6.083887,
+    "openings": [
+      {
+        "name": "Nimzowitsch Defense: Scandinavian Variation, Aachen Gambit",
+        "pgn": "1. e4 Nc6 2. d4 d5 3. exd5 Nb4"
+      }
+    ]
+  },
   "Berlin": {
     "latitude": 52.520007,
     "longitude": 13.404954,
@@ -5420,6 +5532,16 @@
       }
     ]
   },
+  "Kiel": {
+    "latitude": 54.323293,
+    "longitude": 10.122765,
+    "openings": [
+      {
+        "name": "Scandinavian Defense: Kiel Variation",
+        "pgn": "1. e4 d5 2. exd5 Nf6 3. d4 Nxd5 4. c4 Nb4"
+      }
+    ]
+  },
   "Portugal": {
     "latitude": 39.399872,
     "longitude": -8.224454,
@@ -5476,24 +5598,6 @@
       }
     ]
   },
-  "Valencia": {
-    "latitude": 39.484011,
-    "longitude": -0.753281,
-    "openings": [
-      {
-        "name": "Scandinavian Defense: Valencian Variation",
-        "pgn": "1. e4 d5 2. exd5 Qxd5 3. Nc3 Qd8"
-      },
-      {
-        "name": "Scandinavian Defense: Valencian Variation, Ilundain Variation",
-        "pgn": "1. e4 d5 2. exd5 Qxd5 3. Nc3 Qd8 4. d4 Nf6 5. Nf3 c6"
-      },
-      {
-        "name": "Scandinavian Defense: Valencian Variation, Main Line",
-        "pgn": "1. e4 d5 2. exd5 Qxd5 3. Nc3 Qd8 4. d4 Nf6 5. Nf3 Bg4"
-      }
-    ]
-  },
   "Everglades": {
     "latitude": 25.745929,
     "longitude": -80.554956,
@@ -5501,6 +5605,16 @@
       {
         "name": "Alekhine Defense: Brooklyn Variation, Everglades Variation",
         "pgn": "1. e4 Nf6 2. e5 Ng8 3. d4 f5"
+      }
+    ]
+  },
+  "Voronezh": {
+    "latitude": 51.668349,
+    "longitude": 39.191929,
+    "openings": [
+      {
+        "name": "Alekhine Defense: Exchange Variation, Voronezh Variation",
+        "pgn": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. exd6 cxd6 6. Nc3 g6 7. Be3 Bg7 8. Rc1 O-O 9. b3"
       }
     ]
   },
@@ -5660,6 +5774,100 @@
       }
     ]
   },
+  "Scheveningen": {
+    "latitude": 52.102402,
+    "longitude": 4.302183,
+    "openings": [
+      {
+        "name": "Sicilian Defense: Smith-Morra Gambit Accepted, Scheveningen Formation",
+        "pgn": "1. e4 c5 2. d4 cxd4 3. c3 dxc3 4. Nxc3 Nc6 5. Nf3 d6 6. Bc4 e6"
+      },
+      {
+        "name": "Sicilian Defense: Scheveningen Variation",
+        "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6"
+      },
+      {
+        "name": "Sicilian Defense: Scheveningen Variation, English Attack, with Qd2",
+        "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be3 e6 7. Qd2"
+      },
+      {
+        "name": "Sicilian Defense: Scheveningen Variation, Fianchetto Variation",
+        "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. g3"
+      },
+      {
+        "name": "Sicilian Defense: Scheveningen Variation, Vitolins Variation",
+        "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Bb5+"
+      },
+      {
+        "name": "Sicilian Defense: Scheveningen Variation, Keres Attack",
+        "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. g4"
+      },
+      {
+        "name": "Sicilian Defense: Scheveningen Variation, Matanovic Attack",
+        "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. f4"
+      },
+      {
+        "name": "Sicilian Defense: Scheveningen Variation, Tal Variation",
+        "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. f4 Nc6 7. Be3 Be7 8. Qf3"
+      },
+      {
+        "name": "Sicilian Defense: Scheveningen Variation, Classical Variation",
+        "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Be2"
+      },
+      {
+        "name": "Sicilian Defense: Scheveningen Variation, Modern Variation",
+        "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3 d6 6. Be2 Nf6"
+      },
+      {
+        "name": "Sicilian Defense: Scheveningen Variation, Modern Variation",
+        "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Be2 Be7 7. O-O O-O 8. f4 Nc6 9. Be3"
+      },
+      {
+        "name": "Sicilian Defense: Scheveningen Variation, Modern Variation",
+        "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Be2 Be7 7. O-O O-O 8. f4 Nc6 9. Be3 Bd7 10. Nb3"
+      },
+      {
+        "name": "Sicilian Defense: Najdorf Variation, Scheveningen Variation",
+        "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be2 e6 7. O-O Nbd7"
+      },
+      {
+        "name": "Sicilian Defense: Scheveningen Variation, Classical Variation",
+        "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be2 e6"
+      },
+      {
+        "name": "Sicilian Defense: Scheveningen Variation, Classical Variation",
+        "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be2 e6 7. O-O Qc7"
+      },
+      {
+        "name": "Sicilian Defense: Scheveningen Variation, Classical Main Line",
+        "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3 Qc7 6. Be2 a6 7. O-O Nf6 8. Be3 Be7 9. f4 d6 10. Qe1 O-O"
+      },
+      {
+        "name": "Sicilian Defense: Scheveningen Variation, Classical Variation, Paulsen Variation",
+        "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. f4 e6 7. Be2 Qc7 8. O-O Nc6"
+      },
+      {
+        "name": "Sicilian Defense: Scheveningen Variation, Classical Variation, Paulsen Variation",
+        "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3 Qc7 6. Be2 a6 7. O-O Nf6 8. Be3 d6 9. f4"
+      },
+      {
+        "name": "Sicilian Defense: Scheveningen Variation, Classical Variation, Paulsen Variation",
+        "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3 Qc7 6. Be2 a6 7. O-O Nf6 8. Kh1 Be7 9. f4 d6 10. a4"
+      },
+      {
+        "name": "Sicilian Defense: Scheveningen Variation, Delayed Keres Attack",
+        "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be3 e6 7. g4"
+      },
+      {
+        "name": "Sicilian Defense: Scheveningen Variation, Delayed Keres Attack, Perenyi Gambit",
+        "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be3 e6 7. g4 e5 8. Nf5 g6 9. g5"
+      },
+      {
+        "name": "Sicilian Defense: Scheveningen Variation, English Attack, with f3",
+        "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be3 e6 7. f3"
+      }
+    ]
+  },
   "Denmark": {
     "latitude": 56.26392,
     "longitude": 9.501785,
@@ -5695,6 +5903,11 @@
       },
       { "name": "Danish Gambit Declined: Sorensen Defense", "pgn": "1. e4 e5 2. d4 exd4 3. c3 d5" }
     ]
+  },
+  "Brussels": {
+    "latitude": 50.847642,
+    "longitude": 4.35717,
+    "openings": [{ "name": "Sicilian Defense: Brussels Gambit", "pgn": "1. e4 c5 2. Nf3 f5" }]
   },
   "Jalalabad": {
     "latitude": 34.428353,
@@ -5732,6 +5945,26 @@
       {
         "name": "Sicilian Defense: Venice Attack",
         "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Bb5+"
+      }
+    ]
+  },
+  "Yerevan": {
+    "latitude": 40.187202,
+    "longitude": 44.515209,
+    "openings": [
+      {
+        "name": "Sicilian Defense: O'Kelly Variation, Yerevan System",
+        "pgn": "1. e4 c5 2. Nf3 a6 3. Nc3"
+      }
+    ]
+  },
+  "Francisco": {
+    "latitude": 37.77493,
+    "longitude": -122.419415,
+    "openings": [
+      {
+        "name": "Sicilian Defense: Nyezhmetdinov-Rossolimo Attack, San Francisco Gambit",
+        "pgn": "1. e4 c5 2. Nf3 Nc6 3. Bb5 Na5 4. b4"
       }
     ]
   },
@@ -5791,10 +6024,40 @@
       }
     ]
   },
+  "Podebrady": {
+    "latitude": 50.142425,
+    "longitude": 15.118888,
+    "openings": [
+      {
+        "name": "Sicilian Defense: Richter-Rauzer Variation, Podebrady Variation",
+        "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Bg5 e6 7. Nb3"
+      }
+    ]
+  },
+  "Zagreb": {
+    "latitude": 45.815011,
+    "longitude": 15.981919,
+    "openings": [
+      {
+        "name": "Sicilian Defense: Najdorf Variation, Zagreb Variation",
+        "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. g3"
+      }
+    ]
+  },
   "Mediterranean": {
     "latitude": 35,
     "longitude": 18,
     "openings": [{ "name": "French Defense: Mediterranean Defense", "pgn": "1. e4 e6 2. d4 Nf6" }]
+  },
+  "Fort Knox": {
+    "latitude": 37.883664,
+    "longitude": -85.965269,
+    "openings": [
+      {
+        "name": "French Defense: Rubinstein Variation, Fort Knox Variation",
+        "pgn": "1. e4 e6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Bd7 5. Nf3 Bc6"
+      }
+    ]
   },
   "Frankfurt": {
     "latitude": 50.110922,
@@ -5823,6 +6086,17 @@
       {
         "name": "Danish Gambit Accepted: Copenhagen Defense",
         "pgn": "1. e4 e5 2. d4 exd4 3. c3 dxc3 4. Bc4 cxb2 5. Bxb2 Bb4+"
+      }
+    ]
+  },
+  "Calabria": {
+    "latitude": 39.308771,
+    "longitude": 16.346379,
+    "openings": [
+      { "name": "Bishop's Opening: Calabrese Countergambit", "pgn": "1. e4 e5 2. Bc4 f5" },
+      {
+        "name": "Bishop's Opening: Calabrese Countergambit, Jaenisch Variation",
+        "pgn": "1. e4 e5 2. Bc4 f5 3. d3"
       }
     ]
   },
@@ -6065,6 +6339,16 @@
       {
         "name": "Gr\u00fcnfeld Defense: Three Knights Variation, Vienna Variation",
         "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. e3 O-O 6. Qb3"
+      }
+    ]
+  },
+  "Tashkent": {
+    "latitude": 41.299496,
+    "longitude": 69.240073,
+    "openings": [
+      {
+        "name": "King's Gambit Accepted: Schallopp Defense, Tashkent Attack",
+        "pgn": "1. e4 e5 2. f4 exf4 3. Nf3 Nf6 4. e5 Nh5 5. g4"
       }
     ]
   },
@@ -6993,6 +7277,14 @@
       }
     ]
   },
+  "Dresden": {
+    "latitude": 51.050409,
+    "longitude": 13.737262,
+    "openings": [
+      { "name": "Dresden Opening: The Goblin", "pgn": "1. e4 e5 2. Nf3 Nc6 3. c4 Nf6 4. Nxe5" },
+      { "name": "King's Pawn Game: Dresden Opening", "pgn": "1. e4 e5 2. Nf3 Nc6 3. c4" }
+    ]
+  },
   "Ireland": {
     "latitude": 53.41291,
     "longitude": -8.24389,
@@ -7329,6 +7621,16 @@
       }
     ]
   },
+  "Krak\u00f3w": {
+    "latitude": 50.06465,
+    "longitude": 19.94498,
+    "openings": [
+      {
+        "name": "Italian Game: Giuoco Piano, Cracow Variation",
+        "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Kf1"
+      }
+    ]
+  },
   "Perreux": {
     "latitude": 46.03762,
     "longitude": 4.122751,
@@ -7346,6 +7648,13 @@
       { "name": "Ruy Lopez: Bulgarian Variation", "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a5" }
     ]
   },
+  "Nuremberg": {
+    "latitude": 49.452102,
+    "longitude": 11.076665,
+    "openings": [
+      { "name": "Ruy Lopez: N\u00fcrnberg Variation", "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 f6" }
+    ]
+  },
   "Albania": {
     "latitude": 41.153332,
     "longitude": 20.168331,
@@ -7353,7 +7662,17 @@
       { "name": "Ruy Lopez: Rotary-Albany Gambit", "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 b6" }
     ]
   },
-  "Rio de Janeiro": {
+  "Beverwijk": {
+    "latitude": 52.486984,
+    "longitude": 4.657447,
+    "openings": [
+      {
+        "name": "Ruy Lopez: Berlin Defense, Beverwijk Variation",
+        "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Bc5"
+      }
+    ]
+  },
+  "Janeiro": {
     "latitude": -22.906847,
     "longitude": -43.172896,
     "openings": [
@@ -7364,6 +7683,16 @@
       {
         "name": "Ruy Lopez: Berlin Defense, Rio de Janeiro Variation",
         "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Be7 6. Qe2 Nd6 7. Bxc6 bxc6 8. dxe5 Nb7 9. Nc3 O-O 10. Re1 Nc5 11. Nd4 Ne6 12. Be3 Nxd4 13. Bxd4 c5"
+      }
+    ]
+  },
+  "Riga": {
+    "latitude": 56.967694,
+    "longitude": 24.105622,
+    "openings": [
+      {
+        "name": "Ruy Lopez: Open, Riga Variation",
+        "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 exd4"
       }
     ]
   },
@@ -7378,6 +7707,16 @@
       {
         "name": "Nimzo-Indian Defense: St. Petersburg Variation",
         "pgn": "1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 b6"
+      }
+    ]
+  },
+  "Breslau": {
+    "latitude": 51.107885,
+    "longitude": 17.038538,
+    "openings": [
+      {
+        "name": "Ruy Lopez: Open, Breslau Variation",
+        "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 b5 7. Bb3 d5 8. dxe5 Be6 9. c3 Be7 10. Re1 O-O 11. Nd4 Nxe5"
       }
     ]
   },
@@ -7430,6 +7769,16 @@
       }
     ]
   },
+  "Semmering": {
+    "latitude": 47.643562,
+    "longitude": 15.830205,
+    "openings": [
+      {
+        "name": "Queen's Gambit Declined: Semmering Variation",
+        "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. e3 e6 5. Nbd2 Nbd7 6. Bd3 c5"
+      }
+    ]
+  },
   "Prague": {
     "latitude": 50.075538,
     "longitude": 14.437801,
@@ -7458,13 +7807,33 @@
       }
     ]
   },
-  "Mar del Plata": {
+  "Westphalia": {
+    "latitude": 51.433237,
+    "longitude": 7.661594,
+    "openings": [
+      {
+        "name": "Queen's Gambit Declined: Westphalian Variation",
+        "pgn": "1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Bb4 5. Bg5 Nbd7 6. e3 c5"
+      }
+    ]
+  },
+  "Plata": {
     "latitude": -38.005477,
     "longitude": -57.542611,
     "openings": [
       {
         "name": "Queen's Gambit Declined: Lasker Defense, Bernstein Variation, Mar del Plata Gambit",
         "pgn": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. e3 O-O 6. Nf3 h6 7. Bh4 Ne4 8. Bxe7 Qxe7 9. cxd5 Nxc3 10. bxc3 exd5 11. Qb3 Rd8 12. c4 Be6"
+      }
+    ]
+  },
+  "Seville": {
+    "latitude": 37.389092,
+    "longitude": -5.984459,
+    "openings": [
+      {
+        "name": "Gr\u00fcnfeld Defense: Exchange Variation, Seville Variation",
+        "pgn": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bc4 c5 8. Ne2 Nc6 9. Be3 O-O 10. O-O Bg4 11. f3 Na5 12. Bxf7+"
       }
     ]
   },
