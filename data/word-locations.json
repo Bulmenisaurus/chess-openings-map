@@ -92,5 +92,11 @@
   "England": { "latitude": 52.355518, "longitude": -1.17432, "location": "England" },
   "Hollywood": { "latitude": 34.092809, "longitude": -118.328661, "location": "Hollywood" },
   "Zinnowitz": { "latitude": 54.075441, "longitude": 13.908474, "location": "Zinnowitz" },
-  "Kazakh": { "latitude": 48.019573, "longitude": 66.923684, "location": "Kazakhstan" }
+  "Kazakh": { "latitude": 48.019573, "longitude": 66.923684, "location": "Kazakhstan" },
+  "Zaire": {
+    "latitude": -4.038333,
+    "longitude": 21.758664,
+    "location": "Democratic Republic of the Congo"
+  },
+  "Lisbon": { "latitude": 38.722252, "longitude": -9.139337, "location": "Lisbon" }
 }

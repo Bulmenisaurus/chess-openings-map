@@ -4775,6 +4775,18 @@
       }
     ]
   },
+  "Democratic Republic of the Congo": {
+    "latitude": -4.038333,
+    "longitude": 21.758664,
+    "openings": [{ "name": "Zaire Defense", "pgn": "1. d4 Nc6 2. d5 Nb8 3. e4 Nf6 4. e5 Ng8" }]
+  },
+  "Lisbon": {
+    "latitude": 38.722252,
+    "longitude": -9.139337,
+    "openings": [
+      { "name": "Rat Defense: English Rat, Lisbon Gambit", "pgn": "1. d4 d6 2. c4 e5 3. dxe5 Nc6" }
+    ]
+  },
   "Amazon": {
     "latitude": -3.465305,
     "longitude": -62.21588,
